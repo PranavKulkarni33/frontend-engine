@@ -1,4 +1,30 @@
-<div><h1>FrontEnd- Engine</h1></div>
+<!-- <div class="container">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div> -->
 
+<mat-toolbar color="warn">
+  <span>Frontend Engine</span>
+  <span class="spacer"></span>
 
-<router-outlet> </router-outlet>
+  <a class="frontend-engine-links" routerLink="/about"> <button mat-button>About</button> </a>
+  <a class="frontend-engine-links" routerLink="/products"> <button mat-button>Portfolio</button> </a>
+  <a class="frontend-engine-links" outerLink="/contact"> <button mat-button>Contact</button> </a>
+
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+  <mat-menu #menu="matMenu">
+    <a class="frontend-engine-links" routerLink="/contact"> <button mat-menu-item>Get in touch</button> </a>
+    <a class="frontend-engine-links" routerLink="/products"> <button mat-menu-item>Portfolio</button> </a>
+  </mat-menu>
+</mat-toolbar>
+
+<!--
+
+    <a routerLink="/Service/Sign_in">
+  -->
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>

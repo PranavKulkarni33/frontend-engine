@@ -308,7 +308,7 @@
 .light-theme {
   --primary: #3f51b5;
   --secondary: #f50057;
-  --background: #fff;
+  --background: #5A5A5A;
   --surface: #fff;
   --on-primary: #fff;
   --on-secondary: #fff;
@@ -342,8 +342,13 @@ mat-card {
 
 .spacer {
   flex: 1 1 auto;
+  
 }
 
+.main{
+    color: white;
+    text-decoration:none;
+}
 
 
 
@@ -359,4 +364,11 @@ mat-slide-toggle {
 mat-button {
   background-color: var(--secondary);
   color: var(--on-secondary);
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px,50px,50px;
 }

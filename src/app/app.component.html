@@ -5,14 +5,16 @@
   </div> -->
 
 <mat-toolbar color="warn">
-  <span>Frontend Engine</span>
+  <a class="main" routerLink="/home" ><span >ᖴᖇOᑎTEᑎᗪ EᑎGIᑎE</span></a>
   <span class="spacer"></span>
 
+  <a class="frontend-engine-links" routerLink="/home"> <button mat-button>Home</button> </a>
   <a class="frontend-engine-links" routerLink="/about"> <button mat-button>About</button> </a>
   <a class="frontend-engine-links" routerLink="/products"> <button mat-button>Portfolio</button> </a>
-  <a class="frontend-engine-links" outerLink="/contact"> <button mat-button>Contact</button> </a>
+  <a class="frontend-engine-links" routerLink="/contact"> <button mat-button>Contact</button> </a>
+  
 
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <button class="frontend-engine-links" mat-button [matMenuTriggerFor]="menu" >Menu</button>
 
   <mat-menu #menu="matMenu">
     <a class="frontend-engine-links" routerLink="/contact"> <button mat-menu-item>Get in touch</button> </a>
@@ -25,6 +27,5 @@
     <a routerLink="/Service/Sign_in">
   -->
 
-  <div class="container">
+
     <router-outlet></router-outlet>
-  </div>

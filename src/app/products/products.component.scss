@@ -1,0 +1,69 @@
+.example-input-wrapper {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    margin-right: 4px;
+  }
+  
+  .size-card {
+    max-width: 400px;
+    background: #90EE90;
+    margin: 10px;
+    padding: 10px;
+
+    mat-card-subtitle {
+      text-align: left;
+    }
+
+    mat-card-title {
+      text-align: left;
+      font-weight: 700;
+    }
+  }
+
+  .textcolor{
+    text-align: center;
+    color: red;
+  }
+
+  .pad{
+    text-align: center;
+    color: black;
+  }
+
+  .thumbnail { 
+    top:-10px; 
+    left:-5px; 
+    display:block; 
+    z-index: 333;; 
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    object-fit: contain;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+       /*change the number below to scale to the appropriate size*/ 
+       &:hover { 
+        transform: scale(1.12); 
+        }
+    
+    } 
+    
+ 
+
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .colorb{
+      background: beige;
+    }
+
+    

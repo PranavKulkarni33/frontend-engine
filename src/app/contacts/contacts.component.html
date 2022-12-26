@@ -1,3 +1,68 @@
-<p>Contact: Pranav : xxx-xxx-xxxx</p>
-<p>Contact: Hrishi : xxx-xxx-xxxx</p>
+<div class="float-parent-element">
+    <div class="float-child-element">
+        
+        <form class="contact-us" (ngSubmit)="onSubmit()" data-netlify="true" action="/home">
+            <h1 class="contacts__title">Want to estimate a project?</h1>
+            <p class="contacts__subtitle">Just tell us about your project, what are your goals, and let's start.</p>
+            <label class="contacts__form-label" for="contacts-form-name">Your name</label>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Name" [value]="name" name="name">
+            </mat-form-field>
+            <label class="contacts__form-label" for="contacts-form-email">Email</label>
+            <mat-form-field>
+              <input matInput type="email" placeholder="Email" [value]="email" name="email">
+            </mat-form-field>
+            <label class="contacts__form-label" for="contacts-form-message">Message</label>
+            <mat-form-field>
+              <textarea matInput placeholder="Message" [value]="message" name="message"></textarea>
+            </mat-form-field>
+            
+            <div class="contacts__form-file">
+                <input class="contacts__form-file-input" id="form-file" type="file" name="attach" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv">
+                <label class="contacts__form-file-label"  for="form-file">
+                    
+                Attach File
+                </label>
+                <button class="submitButton" mat-raised-button type="submit">Submit</button>
+            </div>
+            
+            
+          </form>
+    </div>
+    <div class="float-child-element">
+        <div class="contact-us">
+            <div>
+            <h1 class="contacts__title">Email</h1>
+            <div class="contacts__info-email">kulkarnipranavmahesh@gmail.com
+            <div class="contacts__info-copy"></div>
+            <div class="contacts__info-message">Email copied to clipboard</div>
+            </div>
+            <h1 class="contacts__title">Phones</h1>
+            <div class="contacts__info-row">
+            <p>Pranav Kulkarni<br>
+                <a href="tel:4373282883">+1 (437)328 2883</a></p>
+            <p>Hrishikesh Pothdar<br>
+                <a href="tel:6822342481">+1 (682) 234 2481</a></p>
+            </div>
+            <h1 class="contacts__title">Address</h1>
+            <address class="contacts__info-address">251 Jarvis St.,<br>Toronto, M5B 0C3,<br>Ontario, Canada</address>
+            </div>
+            </div>
+    </div>
+  </div>
 
+
+
+
+    
+    
+    
+    
+
+    
+    
+  
+  
+  
+  
+  

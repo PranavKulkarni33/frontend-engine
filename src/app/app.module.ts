@@ -20,6 +20,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { RProductComponent } from './r-product/r-product.component';
+import { ServicesComponent } from './services/services.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +37,8 @@ import {MatIconModule} from '@angular/material/icon';
     ProductsComponent,
     ContactsComponent,
     NavbarComponent,
+    RProductComponent,
+    ServicesComponent,
     
   ],
   imports: [
@@ -45,7 +52,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatSlideToggleModule,
     MatMenuModule,
     MatStepperModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],

@@ -2,13 +2,21 @@
 
 
 .frontend-engine-links {
-    color: yellow;
+    color: lightcyan;
     text-decoration: none;
+
+    font-size:20px;
+
+
+  &:hover {
+    color: yellow;
+    }
 }
 
 .frontend-engine-portfolio {
     color: black;
     text-decoration: none;
+    
 }
 
 .black-backgroung {

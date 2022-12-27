@@ -24,6 +24,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { RProductComponent } from './r-product/r-product.component';
 import { ServicesComponent } from './services/services.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { ServicesComponent } from './services/services.component';
     MatStepperModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
 
   ],
   providers: [],

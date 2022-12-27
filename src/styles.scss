@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 
+@use '@angular/material' as mat;
+
+$my-custom-typography-config: mat.define-typography-config(
+  $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $headline-4: mat.define-typography-level(34px, 40px, 400),
+  $headline-5: mat.define-typography-level(24px, 32px, 400),
+  // ...
+);
+
 .frontend-engine-links {
     color: lightcyan;
     text-decoration: none;
@@ -22,5 +33,5 @@
 .black-backgroung {
     background: black;
 }
-html { background-color: beige; }
+html { background-color: beige; font-family: 'Roboto'; }
 

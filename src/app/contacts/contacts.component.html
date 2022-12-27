@@ -1,29 +1,29 @@
 <div class="float-parent-element">
     <div class="float-child-element">
-        <form name="ContactUs" class="contact-us" (ngSubmit)="onSubmit()">
-            <h1 >Want to estimate a project?</h1>
+        <form name="ContactUs" class="contact-us" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            <h1>Want to estimate a project?</h1>
             <p>Just tell us about your project, what are your goals, and let's start.</p>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-name">Your name</label>
-                <input matInput type="text" placeholder="John Doe" [value]="name" name="name">
+                <input matInput type="text" formControlName="name" placeholder="John Doe" [value]="name" name="Name">
                 <mat-icon matSuffix>text_rotation_none</mat-icon>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-email">Email</label>
-                <input matInput type="email" placeholder="john@doe.com" [value]="email" name="email">
+                <input matInput type="email" formControlName="email" placeholder="john@doe.com" [value]="email" name="Email">
                 <mat-icon matSuffix>alternate_email</mat-icon>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-message">Message</label>
-                <textarea matInput placeholder="I'd like to get an estimate on a project" [value]="message"
-                    name="message"></textarea>
+                <textarea matInput formControlName="message" placeholder="I'd like to get an estimate on a project" [value]="message"
+                    name="Message"></textarea>
                 <mat-icon matSuffix> mail_outline</mat-icon>
             </mat-form-field>
 
-            <button mat-raised-button type="submit">Submit</button>
+            <button mat-raised-button type="submit" [disabled]="!FormData.valid">Submit</button>
         </form>
     </div>
     <div class="float-child-element">

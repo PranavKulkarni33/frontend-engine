@@ -24,8 +24,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { RProductComponent } from './r-product/r-product.component';
 import { ServicesComponent } from './services/services.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';  
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './email.service';
 import {MatGridListModule} from '@angular/material/grid-list';
-
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
@@ -56,10 +60,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
     MatGridListModule
-
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
